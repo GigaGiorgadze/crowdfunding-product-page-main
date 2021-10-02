@@ -152,12 +152,12 @@ input{
     width: 100% !important;
 }
 .inputDiv span{
-    margin-left: 2%;
+    margin-left: 1%;
 }
 .modal section p{
-    margin-left: 7%;
+    margin-left: 5%;
 }
-.modal section:hover span{
+.modal section:hover span:not(.leftBold,.gray){
     color: cyan;
 }
 .modal section:hover input{
@@ -181,15 +181,23 @@ input[type='radio']:before {
     border: 1px solid cyan;
   }
 i{
-    margin-left: 5%;
+    margin-left: 2%;
     font-style: normal;
+    color: cyan;
 }
 .modal section span{
-    width: 100%;
+    width: 70%;
 }
 .modal-content{
     padding: 5%;
 }
 .modal-dialog{
     max-width: 50vw;
+}
+.modalLeft{
+    flex-grow: 1;
+    text-align: end;
+}
+.leftBold{
+    font-weight: 700;
 }
