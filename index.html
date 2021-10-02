@@ -15,6 +15,42 @@
 </head>
 
 <body>
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="between">
+          <div class="modalText">
+            <h5 class="modal-title" id="exampleModal3Label">Modal title</h5>
+            <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+          </div>
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="noReward">
+            <label>
+              <div class="inputDiv">
+                <input type="radio" name="reward" id="NoReward">
+                <span>Pledge with no reward</span>
+              </div>
+              <p>Choose to support us without a reward if you simply belive in our project, As a backer you will be signer up to recive product updates via email.</p>
+            </label>
+          </section>
+          <section class="BambReward">
+            <label>
+              <div class="inputDiv">
+                <input type="radio" name="reward" id="NoReward">
+                <span>Bamboo Stand <i>Pledge $25 or more</i></span>
+              </div>
+              <p>Choose to support us without a reward if you simply belive in our project, As a backer you will be signer up to recive product updates via email.</p>
+            </label>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt=""></a>
@@ -44,8 +80,8 @@
       <img class="masterCraftImg" src="./images/logo-mastercraft.svg" alt="">
       <h3>Mastercraft Bamboo Monitor Riser</h3>
       <p>A beatiful & handcrafted monitor stand to reduce neck and eye strain.</p>
-      <div class="betweeen">
-        <button class="backBtn btn">
+      <div class="between">
+        <button class="cyan btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
           Back this project
         </button>
         <div class="bookmarkDiv">
@@ -74,6 +110,74 @@
       <div class="barOutside">
         <div class="bar"></div>
       </div>
+    </section>
+    <section class="about">
+      <h6>About this project</h6>
+      <p>
+        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+        to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+        your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+      </p>
+      <p>
+        Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+        to allow notepads, pens, and USB sticks to be stored under the stand.
+      </p>
+      <section>
+        <div class="between">
+          <h5>Bamboo Stand</h5>
+          <span class="cyanSpan">Pledge $25 or more</span>
+        </div>
+        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+          you’ll be added to a special Backer member list.</p>
+        <div class="between">
+          <div class="left">
+            <span class="leftBold">
+              101
+            </span>
+            <span class="gray">left</span>
+          </div>
+          <button class="cyan btn">Select Reward</button>
+        </div>
+      </section>
+      <section>
+        <div class="between">
+          <h5>Black Edition Stand</h5>
+          <span class="cyanSpan">Pledge $75 or more</span>
+        </div>
+        <p>
+          You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+          member list. Shipping is included.
+        </p>
+        <div class="between">
+          <div class="left">
+            <span class="leftBold">
+              64
+            </span>
+            <span class="gray">left</span>
+          </div>
+          <button class="cyan btn">Select Reward</button>
+        </div>
+      </section>
+      <section class="disabled">
+        <div class="filter"></div>
+        <div class="between">
+          <h5>Mahogany Special Edition</h5>
+          <span class="cyanSpan">Pledge $75 or more</span>
+        </div>
+        <p>
+          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+          to our Backer member list. Shipping is included.
+        </p>
+        <div class="between">
+          <div class="left">
+            <span class="leftBold">
+              0
+            </span>
+            <span class="gray">left</span>
+          </div>
+          <button class="cyan btn disabledBtn" disabled>Out of stock</button>
+        </div>
+      </section>
     </section>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

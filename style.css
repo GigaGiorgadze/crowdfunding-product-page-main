@@ -23,21 +23,23 @@ main{
 section{
     padding: 3% 5%;
     width: 100%;
+    position: relative;
     text-align: center;
+    border: 1px solid lightgray;
 }
 .masterCraftImg{
     transform: translateY(-80%);
 }
-.betweeen{
+.between{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 section h3{
     font-weight: 700;
 }
-.backBtn{
+.cyan{
     background-color: hsl(176, 72%, 28%);
     color: white;
     border-radius: 30px;
@@ -55,7 +57,7 @@ section p{
     width: 150px;
     height: 55px;
 }
-.backBtn:hover{
+.cyan:hover{
     color: white !important;
 }
 .bookmarkDiv{
@@ -73,6 +75,7 @@ section p{
     height: 10px;
     overflow: hidden;
     border-radius: 20px;
+    margin-top: 5%;
     background-color: lightgray;
 }
 .bar{
@@ -92,4 +95,101 @@ hr{
     width: 10%;
     color: black;
     transform: rotate(90deg);
+}
+.bold{
+    font-size: 20px;
+    display: block;
+    font-weight: 800;
+}
+.gray{
+    font-size: 14px;
+    color: gray;
+}
+h6{
+    font-weight: 800;
+}
+.about{
+    text-align: start;
+}
+.about section{
+    text-align: start;
+}
+.disabledBtn{
+    background-color: lightgray;
+}
+.filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(238, 230, 230, 0.4);
+}
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0,0.4);
+}
+
+.modal section{
+    text-align: start;
+}
+.modal{
+}
+input{
+    -webkit-appearance: none;
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: cyan;
+}
+.inputDiv{
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+}
+.inputDiv span{
+    margin-left: 2%;
+}
+.modal section p{
+    margin-left: 7%;
+}
+.modal section:hover span{
+    color: cyan;
+}
+.modal section:hover input{
+    border: 1px solid cyan;
+}
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+  }
+  input[type='radio']:checked:before {
+    background: cyan;
+  }
+  input[type='radio']:checked{
+    border: 1px solid cyan;
+  }
+i{
+    margin-left: 5%;
+    font-style: normal;
+}
+.modal section span{
+    width: 100%;
+}
+.modal-content{
+    padding: 5%;
+}
+.modal-dialog{
+    max-width: 50vw;
 }
