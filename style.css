@@ -34,7 +34,7 @@ section{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 section h3{
     font-weight: 700;
@@ -42,6 +42,7 @@ section h3{
 .cyan{
     background-color: hsl(176, 72%, 28%);
     color: white;
+    width: 40%;
     border-radius: 30px;
     padding: 2% 4%;
     font-size: 14px;
@@ -54,7 +55,7 @@ section p{
     border-radius: 20px;
     font-weight: 700;
     color: hsl(0, 0%, 48%);
-    width: 150px;
+    width: 100%;
     height: 55px;
 }
 .cyan:hover{
@@ -62,6 +63,7 @@ section p{
 }
 .bookmarkDiv{
     position: relative;
+    width: 40%;
 }
 .bookmarkDiv img{
     position: absolute;
@@ -136,8 +138,7 @@ h6{
 .modal section{
     text-align: start;
 }
-.modal{
-}
+
 input{
     -webkit-appearance: none;
     border: 1px solid black;
@@ -200,4 +201,17 @@ i{
 }
 .leftBold{
     font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+   main{
+       width: 95vw;
+   }
+
+   .bookmarkDiv img{
+        left: -40px;
+    }
+    .modal-dialog{
+        max-width: unset;
+    }
 }
